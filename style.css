@@ -1,0 +1,196 @@
+:root{
+  --test: green;
+  --checkBox: #0b9d4c;
+  --b-color: #ebe4e1;
+  --b-temp-color: #eaeaea;
+  --light-nav: #ead8d6;
+  --nav: #df4b4b;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-color: var(--b-temp-color);
+}
+
+/* animation */
+.applyFilter{
+		margin-top: 15px;
+		padding: 15px 20px;
+		background-color: white;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 10px;
+		position: relative;
+		z-index: 2;
+	}
+	.filterContainer{
+    background-color: white;
+		margin: 40px 50px 0 !important;
+    padding: 50px 40px;
+		border-radius: 20px !important;
+		display: none;
+		position: relative;
+		z-index: 1;
+	}
+  .flexContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 60px;
+  }
+	.show{
+  display: block !important;
+  /* animation: mymove 0.3s 1; */
+}
+@keyframes mymove {
+  0% {
+    opacity: 0;
+  transform: translateY(-80px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.allSideCurveBorder{
+  border-radius: 10px 10px 0 0 !important;
+}
+
+/* section-1 */
+.sec1{
+  background-image: linear-gradient(90deg, #fd5392, #f86f64);
+  color: white;
+	padding: 5px 10px;
+	border-radius: 20px;
+  margin: 30px;
+}
+.heading{
+  font-size: 50px;
+  margin: 30px 0 0 30px;
+}
+.subHeadingBox{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 30px 50px;
+}
+.subHeading{
+  font-size: 24px;
+  width: 70%;
+}
+.subHeadingIcon{
+  margin-right: 70px;
+  height: auto;
+  width: 60px;
+}
+
+/* section-2 */
+.sec2{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+.plan1, .plan2, .plan3{
+  width: 32%;
+  border-radius: 20px;
+}
+.plan1{
+  background-color: #26af7b;
+}
+.plan2{
+  background-color: #f5a15b;
+}
+.plan3{
+  background-color: #ff5e56;
+}
+.planHeading{
+  font-size: 50px;
+  margin: 30px 0 5px 20px;
+}
+.planSubHeading{
+  font-size: 24px;
+  width: 70%;
+  margin: 0 0 20px 20px;
+}
+.planPrice{
+  font-size: 45px;
+  margin-left: 20px;
+}
+.activeStatus{
+  text-align: center;
+  font-size: 32px;
+  /* background-color: black; */
+  /* opacity: 0.15; */
+  margin-top: 10px;
+  padding: 12px 0;
+  border-radius: 0 0 20px 20px;
+}
+.as1{
+  background-color: #1f9b69;
+}
+.as2{
+  background-color: #dc9052;
+}
+.as3{
+  background-color: #d95b55;
+}
+
+/* section-3 */
+.filterHeader{
+  padding: 30px 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.planName{
+  font-weight: bold;
+  font-size: 50px;
+}
+.planStatus{
+  font-size: 45px;
+}
+.flexContainer ul{
+  color: grey;
+  font-size: 26px;
+  list-style: none;
+  line-height: 65px;
+}
+ul li:before {
+  color: red;
+  content: '✓ ';
+}
+
+/* btn section */
+.btnContainer{
+  padding: 15px 0;
+}
+.viewBtn{
+  font-size: 32px;
+  background-color: lightgrey;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-radius: 50px;
+}
+.smallBtns{
+  margin: 50px 10%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  color: white;
+}
+.subBtn, .RenewBtn{
+  text-align: center;
+  background-color: #f86f64;
+  border-radius: 50px;
+  padding: 10px 0;
+  width: 300px;
+
+}
+/* .RenewBtn{
+  background-color: red;
+} */
